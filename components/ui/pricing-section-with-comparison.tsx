@@ -80,7 +80,7 @@ const vessels: {
 const specs: {
   label: string;
   key: VesselDetailKey;
-  icon: JSX.Element;
+  icon: React.ReactElement;
 }[] = [
   { label: "IMO", key: "IMO", icon: <Info className="w-4 h-4" /> },
   { label: "Ex Name", key: "EX_NAME", icon: <Ship className="w-4 h-4" /> },

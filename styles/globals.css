@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --ds-yellow: #0ea5e9; /* Modern Sky Blue Accent */
@@ -106,6 +106,14 @@
 }
 
 @layer components {
+  .hm-site-shell {
+    min-height: 100vh;
+  }
+
+  .hm-site-main {
+    padding-top: 0;
+  }
+
   .ds-section-light {
     background-color: #f8fafc;
     color: var(--ds-text);
@@ -119,7 +127,7 @@
   }
 
   .ds-hero {
-    padding: 100px 0 80px;
+    padding: 112px 0 80px;
   }
 
   .ds-hero-title {
@@ -248,6 +256,9 @@
     font-size: 14px;
     transition: all 250ms ease;
     position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px 4px !important;
   }
 
@@ -255,17 +266,17 @@
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
-    bottom: 2px;
-    left: 50%;
-    background-color: var(--ds-yellow);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dc3545;
     transition: all 250ms ease;
-    transform: translateX(-50%);
   }
 
   .ds-nav-link:hover::after,
   .ds-nav-link.active::after {
-    width: 80%;
+    width: 100%;
   }
 
   .ds-nav-link:hover {
@@ -332,6 +343,31 @@
     border-color: var(--ds-yellow);
     font-weight: 700;
   }
+}
+
+@media (max-width: 1199.98px) {
+  .ds-hero {
+    padding: 88px 0 72px;
+  }
+}
+
+.hm-site-header .navbar .ds-nav-link.active::after,
+.hm-site-header .navbar .ds-nav-link:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.hm-site-header .navbar .ds-nav-link.active {
+  color: var(--ds-ink) !important;
+}
+
+.hm-site-header,
+.hm-site-header.transparent-header,
+.hm-site-header.sticky-top {
+  box-shadow: none !important;
+  filter: none !important;
 }
 
 /* Custom Scrollbars */
