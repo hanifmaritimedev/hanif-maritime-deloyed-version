@@ -277,7 +277,10 @@ const ServicesPage = () => {
                   Dry bulk shipping services with stronger commercial control
                 </h1>
 
-                <p className="ds-hero-subtitle mb-4" style={{ maxWidth: "640px" }}>
+                <p
+                  className="ds-hero-subtitle mb-4"
+                  style={{ maxWidth: "640px" }}
+                >
                   Hanif Maritime Limited structures freight, vessel, and
                   advisory solutions around cargo reality. The focus is simple:
                   dependable execution, flexible chartering, and responsive
@@ -285,7 +288,10 @@ const ServicesPage = () => {
                 </p>
 
                 <div className="d-flex flex-wrap gap-3 mb-4">
-                  <Button asChild className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white border-0">
+                  <Button
+                    asChild
+                    className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white border-0"
+                  >
                     <Link href="/contact">
                       Discuss a requirement
                       <ArrowRight size={16} className="ms-2" />
@@ -303,7 +309,10 @@ const ServicesPage = () => {
                 <div className="row g-3">
                   {heroStats.map((stat) => (
                     <div className="col-sm-4" key={stat.label}>
-                      <div className="h-100 p-3 p-lg-4" style={heroMetricCardStyle}>
+                      <div
+                        className="h-100 p-3 p-lg-4"
+                        style={heroMetricCardStyle}
+                      >
                         <div
                           className="fw-bold text-white mb-2"
                           style={{ fontSize: "clamp(24px, 3vw, 34px)" }}
@@ -414,7 +423,11 @@ const ServicesPage = () => {
                                   backdropFilter: "blur(10px)",
                                 }}
                               >
-                                <Icon size={18} color="#7dd3fc" className="mb-3" />
+                                <Icon
+                                  size={18}
+                                  color="#7dd3fc"
+                                  className="mb-3"
+                                />
                                 <div className="fw-semibold text-white mb-2">
                                   {pillar.label}
                                 </div>
@@ -437,7 +450,7 @@ const ServicesPage = () => {
                   </div>
                 </div>
 
-                <div
+                {/* <div
                   className="position-absolute d-none d-xl-flex align-items-center gap-3 px-3 py-3"
                   style={{
                     right: "-24px",
@@ -467,7 +480,7 @@ const ServicesPage = () => {
                       windows.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
             </div>
           </div>
@@ -478,7 +491,9 @@ const ServicesPage = () => {
         <div className="container">
           <div className="ds-section-head">
             <p className="ds-section-kicker">What We Do</p>
-            <h2 className="ds-section-title">A service stack built around cargo movement</h2>
+            <h2 className="ds-section-title">
+              A service stack built around cargo movement
+            </h2>
             <p
               className="mx-auto mb-0"
               style={{ maxWidth: "760px", color: "var(--bs-secondary-color)" }}
@@ -506,7 +521,9 @@ const ServicesPage = () => {
                     <div className="p-4 p-lg-5 h-100 d-flex flex-column">
                       <div className="d-flex justify-content-between align-items-start gap-3 mb-4">
                         <div>
-                          <p className="ds-section-kicker mb-2">{pillar.label}</p>
+                          <p className="ds-section-kicker mb-2">
+                            {pillar.label}
+                          </p>
                           <h3 className="h4 mb-0">{pillar.title}</h3>
                         </div>
                         <div className="d-flex align-items-center gap-2 flex-shrink-0">
@@ -538,13 +555,19 @@ const ServicesPage = () => {
                         </div>
                       </div>
 
-                      <p className="text-secondary mb-4" style={{ lineHeight: 1.72 }}>
+                      <p
+                        className="text-secondary mb-4"
+                        style={{ lineHeight: 1.72 }}
+                      >
                         {pillar.description}
                       </p>
 
                       <div className="d-grid gap-3 mb-4">
                         {pillar.points.map((point) => (
-                          <div className="d-flex align-items-start gap-3" key={point}>
+                          <div
+                            className="d-flex align-items-start gap-3"
+                            key={point}
+                          >
                             <span
                               className="d-inline-flex align-items-center justify-content-center rounded-circle flex-shrink-0"
                               style={{
@@ -566,11 +589,15 @@ const ServicesPage = () => {
                       <div
                         className="mt-auto rounded-4 p-3"
                         style={{
-                          background: "linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%)",
+                          background:
+                            "linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%)",
                           border: "1px solid rgba(14, 165, 233, 0.12)",
                         }}
                       >
-                        <p className="mb-0 small fw-semibold" style={{ color: "#334155", lineHeight: 1.7 }}>
+                        <p
+                          className="mb-0 small fw-semibold"
+                          style={{ color: "#334155", lineHeight: 1.7 }}
+                        >
                           {pillar.note}
                         </p>
                       </div>
@@ -585,7 +612,9 @@ const ServicesPage = () => {
             <div className="row g-4 align-items-center">
               <div className="col-lg-4">
                 <p className="ds-section-kicker mb-2">Cargo Coverage</p>
-                <h3 className="mb-3">Dry bulk cargoes we regularly work with</h3>
+                <h3 className="mb-3">
+                  Dry bulk cargoes we regularly work with
+                </h3>
                 <p className="ds-text-muted mb-0">
                   The cargo mix spans raw materials, industrial inputs, and
                   trading commodities that require reliable vessel access and
@@ -632,7 +661,9 @@ const ServicesPage = () => {
 
             <div className="row g-4 align-items-start position-relative">
               <div className="col-lg-4">
-                <p className="ds-section-kicker text-white mb-2">Chartering Focus</p>
+                <p className="ds-section-kicker text-white mb-2">
+                  Chartering Focus
+                </p>
                 <h2 className="ds-section-title text-white mb-3">
                   Flexible structures for different freight exposures
                 </h2>
@@ -662,7 +693,10 @@ const ServicesPage = () => {
                         Responsive commercial desk
                       </span>
                     </div>
-                    <p className="mb-0 small" style={{ color: "#d8e6f2", lineHeight: 1.7 }}>
+                    <p
+                      className="mb-0 small"
+                      style={{ color: "#d8e6f2", lineHeight: 1.7 }}
+                    >
                       Freight advice, vessel options, and fixture follow-up stay
                       in one lane.
                     </p>
@@ -681,9 +715,12 @@ const ServicesPage = () => {
                         Coverage for spot and strategic programs
                       </span>
                     </div>
-                    <p className="mb-0 small" style={{ color: "#d8e6f2", lineHeight: 1.7 }}>
-                      The structure can scale from a single movement to recurring
-                      cargo commitments.
+                    <p
+                      className="mb-0 small"
+                      style={{ color: "#d8e6f2", lineHeight: 1.7 }}
+                    >
+                      The structure can scale from a single movement to
+                      recurring cargo commitments.
                     </p>
                   </div>
                 </div>
@@ -743,7 +780,9 @@ const ServicesPage = () => {
           <div className="row g-4 align-items-start">
             <div className="col-lg-4">
               <p className="ds-section-kicker">How We Work</p>
-              <h2 className="ds-section-title">A cleaner execution model for customers</h2>
+              <h2 className="ds-section-title">
+                A cleaner execution model for customers
+              </h2>
               <p className="ds-text-muted mb-0">
                 The design principle is straightforward: simplify freight
                 planning, centralize communication, and reduce avoidable
@@ -780,13 +819,19 @@ const ServicesPage = () => {
                           </span>
                           <span
                             className="fw-semibold"
-                            style={{ color: "#94a3b8", letterSpacing: "0.08em" }}
+                            style={{
+                              color: "#94a3b8",
+                              letterSpacing: "0.08em",
+                            }}
                           >
                             {item.step}
                           </span>
                         </div>
                         <h3 className="h5 mb-3">{item.title}</h3>
-                        <p className="mb-0 text-secondary" style={{ lineHeight: 1.72 }}>
+                        <p
+                          className="mb-0 text-secondary"
+                          style={{ lineHeight: 1.72 }}
+                        >
                           {item.text}
                         </p>
                       </motion.div>
@@ -824,7 +869,9 @@ const ServicesPage = () => {
 
             <div className="row g-4 align-items-center position-relative">
               <div className="col-lg-5">
-                <p className="ds-section-kicker text-white mb-2">Why Partner With Us</p>
+                <p className="ds-section-kicker text-white mb-2">
+                  Why Partner With Us
+                </p>
                 <h2 className="ds-section-title text-white mb-3">
                   Dependable shipping support backed by practical experience
                 </h2>
@@ -841,7 +888,10 @@ const ServicesPage = () => {
                   around.
                 </p>
 
-                <Button asChild className="bg-white text-slate-900 hover:bg-sky-100">
+                <Button
+                  asChild
+                  className="bg-white text-slate-900 hover:bg-sky-100"
+                >
                   <Link href="/contact">Start a conversation</Link>
                 </Button>
               </div>

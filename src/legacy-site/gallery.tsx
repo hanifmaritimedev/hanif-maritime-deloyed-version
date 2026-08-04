@@ -55,7 +55,7 @@ const Gallery = () => {
               "rubaiyat/image_83.jpeg",
               "rubaiyat/image_84.jpeg",
               "image_41.jpg",
-              "image_42.jpg",
+              // "image_42.jpg",
               "image_43.jpg",
               "image_44.jpg",
               "image_45.jpg",
@@ -88,10 +88,10 @@ const Gallery = () => {
           <div className="row">
             {[
               "image_56.jpg",
-              "image_57.jpg",
+              // "image_57.jpg",
               "image_58.jpg",
-              "image_59.jpg",
-              "image_60.jpg",
+              // "image_59.jpg",
+              // "image_60.jpg",
               "image_61.jpg",
               "image_62.jpg",
               "image_63.jpg",
@@ -123,17 +123,17 @@ const Gallery = () => {
           </div>
           <div className="row">
             {[
-              "gulbano/image_91.jpeg",
+              // "gulbano/image_91.jpeg",
               "gulbano/image_91.jpeg",
               "gulbano/image_92.jpeg",
               "gulbano/image_93.jpeg",
               "image_14.jpeg",
-              "image_17.jpeg",
+              // "image_17.jpeg",
               "image_21.jpeg",
               "image_18.jpeg",
-              "image_19.jpeg",
+              // "image_19.jpeg",
               "image_20.jpeg",
-              "image_15.jpeg",
+              // "image_15.jpeg",
               "image_22.jpeg",
               "image_16.jpeg",
             ].map((image, index) => (
