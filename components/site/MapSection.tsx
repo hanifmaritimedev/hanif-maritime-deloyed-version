@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { WorldMap } from "@/components/ui/world-map";
-import { motion } from "framer-motion";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
 
@@ -12,19 +11,7 @@ export default function MapSection() {
         <div className="text-center md:w-1/2 md:pr-8">
           <p className="font-bold text-2xl md:text-4xl dark:text-white text-black">
             Want to hire a{" "}
-            <span className="text-neutral-400">
-              {"Vessel".split("").map((word, idx) => (
-                <motion.span
-                  key={idx}
-                  className="inline-block"
-                  initial={{ x: -10, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: idx * 0.04 }}
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </span>
+            <span className="text-neutral-400">Vessel</span>
           </p>
           <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4 font-mono w-11/12">
             Managing a shipping business is challenging. Simplify your

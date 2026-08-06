@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 
@@ -52,42 +51,22 @@ export default function HomeHero() {
         <div className="row align-items-center gy-5">
           <div className="col-lg-6">
             <div className="text-start">
-              <motion.div
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-4"
-              >
+              <div className="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-4">
                 <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse d-inline-block" />
                 Established 2021
-              </motion.div>
+              </div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.1 }}
-                className="ds-hero-title mb-4"
-              >
+              <h1 className="ds-hero-title mb-4">
                 Hanif Maritime Limited
-              </motion.h1>
+              </h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.2 }}
-                className="ds-hero-subtitle mb-4 text-slate-300"
-              >
+              <p className="ds-hero-subtitle mb-4 text-slate-300">
                 A sister concern of the renowned HANIF GROUP, specializing in
                 the transportation of dry bulk cargoes with International
                 business standards.
-              </motion.p>
+              </p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.3 }}
-                className="d-flex flex-wrap gap-3 mt-4"
-              >
+              <div className="d-flex flex-wrap gap-3 mt-4">
                 <Link
                   href="https://drive.google.com/file/d/1EH9jsnxZBYm-rXIF8TGogLyCkY8cxq7F/view?usp=drive_link"
                   target="_blank"
@@ -105,17 +84,12 @@ export default function HomeHero() {
                     Explore Our Fleet
                   </Button>
                 </Link>
-              </motion.div>
+              </div>
             </div>
           </div>
 
           <div className="col-lg-6">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 15 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="position-relative"
-            >
+            <div className="position-relative">
               <div
                 className="ds-card-dark p-2 overflow-hidden position-relative"
                 style={{
@@ -127,25 +101,31 @@ export default function HomeHero() {
                   className="position-relative overflow-hidden"
                   style={{ borderRadius: "20px", height: "400px" }}
                 >
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={activeSlide}
-                      initial={{ opacity: 0, scale: 1.03, x: 18 }}
-                      animate={{ opacity: 1, scale: 1, x: 0 }}
-                      exit={{ opacity: 0, scale: 0.98, x: -18 }}
-                      transition={{ duration: 0.55, ease: "easeOut" }}
+                  {heroSlides.map((slide, index) => (
+                    <div
+                      key={slide.src}
                       className="position-absolute top-0 start-0 w-100 h-100"
+                      style={{
+                        opacity: index === activeSlide ? 1 : 0,
+                        transform:
+                          index === activeSlide
+                            ? "scale(1)"
+                            : "scale(1.015)",
+                        transition: "opacity 0.45s ease, transform 0.45s ease",
+                        pointerEvents: index === activeSlide ? "auto" : "none",
+                      }}
                     >
                       <Image
-                        src={heroSlides[activeSlide].src}
-                        alt={heroSlides[activeSlide].alt}
+                        src={slide.src}
+                        alt={slide.alt}
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        priority={activeSlide === 0}
+                        priority={index === 0}
+                        loading={index === 0 ? "eager" : "lazy"}
                       />
-                    </motion.div>
-                  </AnimatePresence>
+                    </div>
+                  ))}
 
                   <div
                     className="position-absolute bottom-0 start-0 end-0 p-4"
@@ -206,7 +186,7 @@ export default function HomeHero() {
                 className="position-absolute top-50 start-50 translate-middle w-75 h-75 bg-sky-500/10 rounded-full blur-3xl -z-10"
                 style={{ pointerEvents: "none" }}
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

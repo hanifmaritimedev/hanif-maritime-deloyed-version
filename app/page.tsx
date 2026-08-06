@@ -1,9 +1,9 @@
+import DeferredMapSection from "@/components/site/DeferredMapSection";
 import HomeHero from "@/components/site/HomeHero";
 import Wrapper from "@/components/site/layout/Wrapper";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import MapSection from "@/components/site/MapSection";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Global Map Section */}
-      <MapSection />
+      <DeferredMapSection />
     </Wrapper>
   );
 }
