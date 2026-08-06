@@ -1,5 +1,0 @@
-:HL["/_next/static/css/337fb4c648b647cd.css","style"]
-:HL["/_next/static/css/a64501c903eb1613.css","style"]
-:HL["/_next/static/css/f4c7aa6eebc02359.css","style"]
-:HL["/_next/static/css/a7ddfdff237ac6c3.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"company","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"2GWcugPf8QoY-ii7-1uCe"}

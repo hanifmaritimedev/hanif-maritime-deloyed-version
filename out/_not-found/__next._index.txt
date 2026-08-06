@@ -1,9 +1,0 @@
-1:"$Sreact.fragment"
-2:I[7121,[],""]
-3:I[4581,[],""]
-4:I[2593,["177","static/chunks/app/layout-a2bd05fc753cd2c9.js"],""]
-:HL["/_next/static/css/337fb4c648b647cd.css","style"]
-:HL["/_next/static/css/a64501c903eb1613.css","style"]
-:HL["/_next/static/css/f4c7aa6eebc02359.css","style"]
-:HL["/_next/static/css/a7ddfdff237ac6c3.css","style"]
-0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/337fb4c648b647cd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a64501c903eb1613.css","precedence":"next"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/f4c7aa6eebc02359.css","precedence":"next"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/a7ddfdff237ac6c3.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}],["$","$L4",null,{"src":"/assets/js/bootstrap.bundle.min.js","strategy":"afterInteractive"}]]}]]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"2GWcugPf8QoY-ii7-1uCe"}
