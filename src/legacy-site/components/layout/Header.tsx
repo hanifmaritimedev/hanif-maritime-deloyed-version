@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Image from "next/image";
-import React from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 const navItems = [
@@ -17,6 +17,29 @@ const navItems = [
 ];
 const Header = () => {
   const pathname = usePathname();
+  const offcanvasRef = useRef<HTMLDivElement | null>(null);
+
+  const closeMobileMenu = useCallback(() => {
+    if (typeof document === "undefined") {
+      return;
+    }
+
+    offcanvasRef.current?.classList.remove("show");
+    offcanvasRef.current?.setAttribute("aria-hidden", "true");
+    offcanvasRef.current?.removeAttribute("aria-modal");
+    offcanvasRef.current?.removeAttribute("role");
+    document.body.classList.remove("offcanvas-backdrop", "modal-open");
+    document.body.style.removeProperty("overflow");
+    document.body.style.removeProperty("padding-right");
+    document
+      .querySelectorAll(".offcanvas-backdrop")
+      .forEach((backdrop) => backdrop.remove());
+  }, []);
+
+  useEffect(() => {
+    closeMobileMenu();
+  }, [closeMobileMenu, pathname]);
+
   return (
     <header
       id="navbar_top"
@@ -58,6 +81,7 @@ const Header = () => {
             style={{ backgroundColor: "#FFFFFF", width: "300px" }}
             id="main_nav"
             tabIndex={-1}
+            ref={offcanvasRef}
           >
             <div className="offcanvas-body align-items-xl-center">
               <div className="offcanvas-header px-0 justify-content-end">
@@ -66,6 +90,7 @@ const Header = () => {
                   className="btn-close"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
+                  onClick={closeMobileMenu}
                 />
               </div>
 
@@ -79,6 +104,7 @@ const Header = () => {
                         target="_blank"
                         rel="noreferrer"
                         style={{ color: "#334155" }}
+                        onClick={closeMobileMenu}
                       >
                         {item.label}
                       </a>
@@ -90,6 +116,7 @@ const Header = () => {
                             : "nav-link ds-nav-link"
                         }
                         href={item.path}
+                        onClick={closeMobileMenu}
                         style={
                           item.label === "Contact"
                             ? undefined
