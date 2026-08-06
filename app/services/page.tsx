@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import {
   Anchor,
@@ -258,11 +255,7 @@ const ServicesPage = () => {
         <div className="container position-relative" style={{ zIndex: 1 }}>
           <div className="row align-items-center gy-5">
             <div className="col-lg-6">
-              <motion.div
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
-              >
+              <div>
                 <div className="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill border border-sky-400/25 bg-sky-400/10 text-sky-300 text-uppercase fw-semibold mb-4">
                   <span
                     className="rounded-circle"
@@ -335,16 +328,11 @@ const ServicesPage = () => {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             </div>
 
             <div className="col-lg-6">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.97, y: 18 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.75, delay: 0.1 }}
-                className="position-relative"
-              >
+              <div className="position-relative">
                 <div
                   className="position-absolute"
                   style={{
@@ -483,7 +471,7 @@ const ServicesPage = () => {
                     </p>
                   </div>
                 </div> */}
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -512,14 +500,7 @@ const ServicesPage = () => {
 
               return (
                 <div className="col-lg-6" key={pillar.id}>
-                  <motion.div
-                    initial={{ opacity: 0, y: 18 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 0.55, delay: index * 0.05 }}
-                    className="ds-card h-100"
-                    style={{ borderRadius: "24px" }}
-                  >
+                  <div className="ds-card h-100" style={{ borderRadius: "24px" }}>
                     <div className="p-4 p-lg-5 h-100 d-flex flex-column">
                       <div className="d-flex justify-content-between align-items-start gap-3 mb-4">
                         <div>
@@ -604,7 +585,7 @@ const ServicesPage = () => {
                         </p>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
               );
             })}
@@ -639,11 +620,7 @@ const ServicesPage = () => {
 
       <section className="ds-section pt-0">
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6 }}
+          <div
             className="position-relative overflow-hidden rounded-5 p-4 p-lg-5 text-white"
             style={{
               background:
@@ -773,7 +750,7 @@ const ServicesPage = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -799,14 +776,7 @@ const ServicesPage = () => {
 
                   return (
                     <div className="col-md-6" key={item.step}>
-                      <motion.div
-                        initial={{ opacity: 0, y: 18 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, amount: 0.2 }}
-                        transition={{ duration: 0.5, delay: index * 0.05 }}
-                        className="ds-card h-100 p-4"
-                        style={{ borderRadius: "22px" }}
-                      >
+                      <div className="ds-card h-100 p-4" style={{ borderRadius: "22px" }}>
                         <div className="d-flex justify-content-between align-items-start gap-3 mb-4">
                           <span
                             className="d-inline-flex align-items-center justify-content-center rounded-circle"
@@ -836,7 +806,7 @@ const ServicesPage = () => {
                         >
                           {item.text}
                         </p>
-                      </motion.div>
+                      </div>
                     </div>
                   );
                 })}
@@ -848,11 +818,7 @@ const ServicesPage = () => {
 
       <section className="service-section ds-section pt-0">
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6 }}
+          <div
             className="position-relative overflow-hidden rounded-5 p-4 p-lg-5 text-white"
             style={{
               background:
@@ -929,7 +895,7 @@ const ServicesPage = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </Wrapper>

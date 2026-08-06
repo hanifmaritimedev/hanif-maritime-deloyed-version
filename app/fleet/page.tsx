@@ -1,9 +1,6 @@
-"use client";
-
 import Wrapper from "@/components/site/layout/Wrapper";
 import Image from "next/image";
 import PricingDemo from "@/components/site/ShipsComparison";
-import { motion } from "framer-motion";
 
 const index = () => {
   return (
@@ -37,12 +34,7 @@ const index = () => {
 
         <div className="container relative z-10">
           <div className="flex flex-col items-center justify-center min-h-[50vh] py-12 px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-3xl mx-auto"
-            >
+            <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-white text-3xl md:text-5xl font-bold mb-4 tracking-wide">
                 OUR FLEET
               </h1>
@@ -110,7 +102,7 @@ const index = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

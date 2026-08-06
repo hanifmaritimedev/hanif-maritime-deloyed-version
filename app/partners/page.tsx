@@ -1,11 +1,7 @@
-"use client";
-
-import React from "react";
 import Wrapper from "@/components/site/layout/Wrapper";
 import BunkerPartnersList from "@/components/site/partners/bunkerPartnersList";
 import CharteringPartnersList from "@/components/site/partners/charteringPartnersList";
 import OfficialPartnersList from "@/components/site/partners/officialPartners";
-import { motion } from "framer-motion";
 
 const Partners = () => {
   return (
@@ -13,24 +9,16 @@ const Partners = () => {
       <section className="ds-section-dark position-relative overflow-hidden ds-hero">
         <div className="container position-relative" style={{ zIndex: 1 }}>
           <div className="text-white text-center">
-            <motion.h2
-              className="ds-hero-title text-white mb-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <h2 className="ds-hero-title text-white mb-3">
               OUR PARTNERS
-            </motion.h2>
-            <motion.p
+            </h2>
+            <p
               className="ds-hero-subtitle mx-auto"
               style={{ maxWidth: "700px", color: "var(--ds-slate)" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
             >
               We collaborate with industry leaders to provide exceptional
               maritime services and solutions
-            </motion.p>
+            </p>
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable */
 import Image from "next/image";
 import React, { useCallback, useEffect, useRef } from "react";

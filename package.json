@@ -1,8 +1,8 @@
 {
-  "name": "novo-sg",
+  "name": "hanif-maritime",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://novo-sg.com",
+  "homepage": "https://hanif-group.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",

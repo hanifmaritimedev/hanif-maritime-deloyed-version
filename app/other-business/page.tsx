@@ -1,9 +1,4 @@
-"use client";
-
-import Image from "next/image";
-import React from "react";
 import Wrapper from "@/components/site/layout/Wrapper";
-import { motion } from "framer-motion";
 
 const OtherBusiness = () => {
   return (
@@ -11,27 +6,19 @@ const OtherBusiness = () => {
       <section className="ds-section-dark position-relative overflow-hidden ds-hero">
         <div className="container position-relative" style={{ zIndex: 1 }}>
           <div className="text-white text-center">
-            <motion.h2
-              className="ds-hero-title text-white mb-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <h2 className="ds-hero-title text-white mb-3">
               OUR BUSINESS UNITS
-            </motion.h2>
-            <motion.p
+            </h2>
+            <p
               className="ds-hero-subtitle mx-auto"
               style={{ maxWidth: "700px", color: "var(--ds-slate)" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
             >
               At Hanif Group, we pride ourselves on our diverse range of
               business ventures, each driven by a commitment to excellence,
               innovation, and quality. Our portfolio spans various industries,
               showcasing our expertise and dedication to meeting the needs of
               our customers and partners. Explore our key business units:
-            </motion.p>
+            </p>
           </div>
         </div>
       </section>

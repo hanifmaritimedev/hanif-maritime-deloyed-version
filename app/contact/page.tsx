@@ -1,9 +1,6 @@
-"use client";
-
-import React from "react";
 import Wrapper from "@/components/site/layout/Wrapper";
 
-const contact = () => {
+const ContactPage = () => {
   return (
     <Wrapper>
       <section className="ds-section-dark ds-hero">
@@ -199,4 +196,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default ContactPage;
