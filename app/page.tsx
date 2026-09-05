@@ -66,10 +66,10 @@ export default function Home() {
                           style={{ height: "200px" }}
                         >
                           <Image
-                            width={300}
-                            height={200}
                             src={service.image}
-                            className="card-img-top w-100 h-100 object-cover"
+                            fill
+                            sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 25vw"
+                            className="card-img-top object-cover"
                             alt={service.title}
                           />
                           <div
