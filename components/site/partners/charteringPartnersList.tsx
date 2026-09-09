@@ -132,17 +132,17 @@ export default function CharteringPartnersList() {
     {
       title: "FORTUNE BULK SHIPPING LIMITED",
       logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      siteUrl: "https://magicport.ai/owners-managers/hong-kong/bulk-fortune-shipping-ltd",
     },
     {
       title: "HARMONY BULKER DMCC",
-      logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      logoUrl: "/assets/images/partners/harmony.png",
+      siteUrl: "https://www.harmonybulkers.com/",
     },
     {
       title: "MIDSTAR SHIPPING FZE, U.A.E",
-      logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      logoUrl: "/assets/images/partners/midstar.png",
+      siteUrl: "https://midstar.com/shipping/",
     },
     {
       title: "CENTURY SCOPE GROUP PTE.LTD.",
@@ -152,27 +152,27 @@ export default function CharteringPartnersList() {
     {
       title: "ELDER TRIUMPHANT SHIPPING LINES PTE LIMITED",
       logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      siteUrl: "https://www.ltddir.com/company?utm_source=elder-triumphant-shipping-lines-pte-limited",
     },
     {
       title: "SEAPOL SHIPPING FZCO",
-      logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      logoUrl: "/assets/images/partners/seapol-logo.png",
+      siteUrl: "https://seapol.ae/",
     },
     {
       title: "INMAR SHIPPING AND LOGISTICS FZCO",
-      logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      logoUrl: "/assets/images/partners/inmar.png",
+      siteUrl: "https://www.inmarshipping.com/",
     },
     {
       title: "AVENIR MARITIME - FZCO",
-      logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      logoUrl: "/assets/images/partners/marine-logo.png",
+      siteUrl: "https://avenirmaritime.com/",
     },
     {
       title: "GLOBE OCEAN SHIPPING PTE.LTD.",
-      logoUrl: "/assets/images/partners/ship-icon-sample.png",
-      siteUrl: "/partners",
+      logoUrl: "/assets/images/partners/global-ocean-shipping.jpg",
+      siteUrl: "https://www.globaloceanssl.com/",
     },
   ];
 
